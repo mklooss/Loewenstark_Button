@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Loewenstark_Button>
+            <version>0.1.0</version>
+        </Loewenstark_Button>
+    </modules>
+    <global>
+        <helpers>
+            <lws_button>
+                <class>Loewenstark_Button_Helper</class>
+            </lws_button>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <lws_button>
+                    <file>button.xml</file>
+                </lws_button>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Loewenstark_Button>
+                    <files>
+                        <lws_button>Loewenstark_Button.csv</lws_button>
+                    </files>
+                </Loewenstark_Button>
+            </modules>
+        </translate>
+    </frontend>
+</config>

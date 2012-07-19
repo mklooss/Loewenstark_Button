@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Loewenstark_Button>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Sales />
+            </depends>
+        </Loewenstark_Button>
+    </modules>
+</config>

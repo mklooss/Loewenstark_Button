@@ -1,0 +1,23 @@
+/**
+ Loewenstark_Button CSS File
+**/
+
+
+.opc .checkout-agreements li {
+    margin-top: 0;
+}
+
+.agreement-content {
+    display: none;
+}
+.agreement-content.open {
+    display: block;
+}
+
+#checkout-review-table td.last {
+    text-align: right;
+}
+
+#checkout-review-table td.last .price {
+    font-weight: bold;
+}
