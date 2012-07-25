@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Loewenstark_Button>
-            <version>0.1.0</version>
+            <version>0.2.0.0</version>
         </Loewenstark_Button>
     </modules>
     <global>
@@ -11,6 +11,30 @@
                 <class>Loewenstark_Button_Helper</class>
             </lws_button>
         </helpers>
+        <models>
+            <lws_button>
+                <class>Loewenstark_Button_Model</class>
+            </lws_button>
+        </models>
+        <resources>
+        <lws_button_setup>
+                <setup>
+                    <module>Loewenstark_Button</module>
+                    <class>Loewenstark_Button_Model_Installer</class>
+                </setup>
+            </lws_button_setup>
+        </resources>
+        <events>
+            <adminhtml_catalog_product_attribute_edit_prepare_form>
+                <observers>
+                    <lws_button_option>
+                        <type>singleton</type>
+                        <class>Loewenstark_Button_Model_AttributeEditTabMain</class>
+                        <method>addOption</method>
+                    </lws_button_option>
+                </observers>
+            </adminhtml_catalog_product_attribute_edit_prepare_form>     
+        </events>
     </global>
     <frontend>
         <layout>
@@ -30,4 +54,15 @@
             </modules>
         </translate>
     </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Loewenstark_Button>
+                    <files>
+                        <lws_button>Loewenstark_Button.csv</lws_button>
+                    </files>
+                </Loewenstark_Button>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>
