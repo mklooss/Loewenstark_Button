@@ -1,5 +1,8 @@
 Button Lösung veränderungen im Checkout
 
+Diese Lösung zeigt eine Methode wie man dieses umsetzen kann!
+Es sollte nur von Leuten benutzt werden, welche sich mit Magento auskennen!
+
 Diese Extension verändert nur die Reihenfolge der Blöcke im Checkout.
 
 1. Magento Agreements
@@ -9,6 +12,9 @@ Diese Extension verändert nur die Reihenfolge der Blöcke im Checkout.
 Screenshots:
 http://www.gunah.eu/images/button/agreements.png
 http://www.gunah.eu/images/button/agreements_open.png
+http://www.gunah.eu/images/button/attribute_settings.png
+http://www.gunah.eu/images/button/warenkorb.png
+http://www.gunah.eu/images/button/checkout.png
 
 
 www.loewenstark.de
