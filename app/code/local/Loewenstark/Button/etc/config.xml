@@ -21,6 +21,11 @@
             <lws_button>
                 <class>Loewenstark_Button_Model</class>
             </lws_button>
+            <sales>
+                <rewrite>
+                    <quote_config>Loewenstark_Button_Model_Sales_Quote_Config</quote_config>
+                </rewrite>
+            </sales>
         </models>
         <resources>
         <lws_button_setup>
