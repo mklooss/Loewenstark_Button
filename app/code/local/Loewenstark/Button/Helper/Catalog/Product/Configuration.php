@@ -76,6 +76,7 @@ extends Mage_Catalog_Helper_Product_Configuration
                         'label' => $attribute->getStoreLabel(),
                         'value' => $value,
                         'print_value' => $value,
+                        'option_id' => $attribute->getOptionId(),
                         'code'  => $attribute->getAttributeCode()
                     );
                 }
