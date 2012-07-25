@@ -1,9 +1,12 @@
 <?php
 
-class Loewenstark_Button_Model_AttributeEditTabMain {
-
+class Loewenstark_Button_Model_AttributeEditTabMain
+{
     /**
      * Add "Visible on Checkout Review on Front-end" Option to Attribute Settings
+     *
+     * @param $observer Magento Event
+     * @return void
     **/
     public function addOption($observer) {
         $event = $observer->getEvent();
