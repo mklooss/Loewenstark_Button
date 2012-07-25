@@ -3,7 +3,7 @@ Button Lösung veränderungen im Checkout
 Diese Lösung zeigt eine Methode wie man dieses umsetzen kann!
 Es sollte nur von Leuten benutzt werden, welche sich mit Magento auskennen!
 
-Diese Extension verändert nur die Reihenfolge der Blöcke im Checkout.
+Neue Reihenfolge im Checkout:
 
 1. Magento Agreements
 2. Product-Items
@@ -16,5 +16,7 @@ http://www.gunah.eu/images/button/attribute_settings.png
 http://www.gunah.eu/images/button/warenkorb.png
 http://www.gunah.eu/images/button/checkout.png
 
+getestet wurde diese Erweiterung mit folgenden Magento Versionen:
+ - 1.7
 
-www.loewenstark.de
+Entwickelt von www.loewenstark.de
