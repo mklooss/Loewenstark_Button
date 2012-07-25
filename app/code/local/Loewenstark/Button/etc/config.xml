@@ -10,6 +10,12 @@
             <lws_button>
                 <class>Loewenstark_Button_Helper</class>
             </lws_button>
+            <catalog>
+                <rewrite>
+                    <!-- Mage_Catalog_Helper_Product_Configuration-->
+                    <product_configuration>Loewenstark_Button_Helper_Catalog_Product_Configuration</product_configuration>
+                </rewrite>
+            </catalog>
         </helpers>
         <models>
             <lws_button>
