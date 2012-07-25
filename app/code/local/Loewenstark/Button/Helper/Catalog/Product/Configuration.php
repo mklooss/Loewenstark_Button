@@ -15,7 +15,7 @@ extends Mage_Catalog_Helper_Product_Configuration
     {
         $options_parent = parent::getCustomOptions($item);
         $options_self = self::getAttributes($item);
-        $options = array_merge($options_parent,$options_self);
+        $options = array_merge($options_self,$options_parent);
         return $options;
     }
     
