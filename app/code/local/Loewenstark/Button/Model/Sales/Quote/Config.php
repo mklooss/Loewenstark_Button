@@ -38,6 +38,5 @@ extends Mage_Sales_Model_Quote_Config {
         }
         
         return $result;
-        return $result;
     }
 }
