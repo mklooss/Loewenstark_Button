@@ -58,7 +58,7 @@ extends Mage_Catalog_Helper_Product_Configuration
      * @param Mage_Catalog_Model_Product_Configuration_Item_Interface $item
      * @return array
     **/
-    public function getConfigurableOptions($item)
+    public function getConfigurableOptions(Mage_Catalog_Model_Product_Configuration_Item_Interface $item)
     {
         return $this->getParentConfigurableOptions($item);
     }
