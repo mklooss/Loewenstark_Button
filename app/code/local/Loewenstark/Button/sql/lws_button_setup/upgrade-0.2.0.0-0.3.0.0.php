@@ -13,7 +13,7 @@ $installer->getConnection()->addColumn(
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '1',
-        'comment'   => 'Agreement is Require'
+        'comment'   => 'Agreement is Required'
     )
 );
 
