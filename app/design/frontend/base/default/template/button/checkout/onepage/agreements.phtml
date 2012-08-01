@@ -34,7 +34,9 @@
 <?php foreach ($this->getAgreements() as $_a): ?>
     <li>
         <p class="agree">
-            <input type="checkbox" id="agreement-<?php echo $_a->getId()?>" name="agreement[<?php echo $_a->getId()?>]" value="1" title="<?php echo $this->htmlEscape($_a->getCheckboxText()) ?>" class="checkbox" />
+            <?php if($_a->getIsRequired()): ?>
+                <input type="checkbox" id="agreement-<?php echo $_a->getId()?>" name="agreement[<?php echo $_a->getId()?>]" value="1" title="<?php echo $this->htmlEscape($_a->getCheckboxText()) ?>" class="checkbox" />
+            <?php endif; ?>
             <label for="agreement-<?php echo $_a->getId()?>"><?php echo $_a->getIsHtml() ? $_a->getCheckboxText() : $this->htmlEscape($_a->getCheckboxText()) ?></label>
             <a href="#" class="ButtonToggleAgreement" onclick="ButtonToggleAgreement(<?php echo $_a->getId()?>); return false;"><?php echo $this->helper("lws_button")->__("[Display]") ?></a>
         </p>

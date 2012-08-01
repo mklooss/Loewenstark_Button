@@ -2,10 +2,17 @@
 <config>
     <modules>
         <Loewenstark_Button>
-            <version>0.2.0.0</version>
+            <version>0.3.0.0</version>
         </Loewenstark_Button>
     </modules>
     <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <checkout_agreement_edit_form>Loewenstark_Button_Block_Adminhtml_Checkout_Agreement_Edit_Form</checkout_agreement_edit_form>
+                </rewrite>
+            </adminhtml>
+        </blocks>
         <helpers>
             <lws_button>
                 <class>Loewenstark_Button_Helper</class>
@@ -16,6 +23,11 @@
                     <product_configuration>Loewenstark_Button_Helper_Catalog_Product_Configuration</product_configuration>
                 </rewrite>
             </catalog>
+            <checkout>
+                <rewrite>
+                    <data>Loewenstark_Button_Helper_Checkout_Data</data>
+                </rewrite>
+             </checkout>
         </helpers>
         <models>
             <lws_button>

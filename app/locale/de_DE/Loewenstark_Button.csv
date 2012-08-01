@@ -1,2 +1,6 @@
 "[Display]","[Anzeigen]"
 "Visible on Checkout Review on Front-end","Sichtbar in der Kasse im Shop"
+"No Checkbox","Keine Bestätigung notwendig"
+"Yes","Ja"
+"No","Nein"
+"Display Checkbox on Frontend","Zeige Checkbox im Shop-Frontend"
