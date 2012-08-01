@@ -24,5 +24,9 @@ getestet wurde diese Erweiterung mit folgenden Magento Versionen:
  - 1.7
  - 1.6
  - 1.5
+ 
+Funktioniert bisher nicht unter folgenden Magento Versionen:
+ - 1.4 (hier nur nach Kundenwunsch)
+ - 1.3 (eine Anpassung hier rauf wird es nicht geben)
 
-Entwickelt von www.loewenstark.de
+Entwickelt von www.loewenstark.de (m.klooss@loewenstark.de)
