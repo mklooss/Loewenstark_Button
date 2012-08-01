@@ -4,7 +4,9 @@ class Loewenstark_Button_Helper_Checkout_Data
 extends Mage_Checkout_Helper_Data
 {
     /**
-     * for Checking Agreements
+     * get all Required Agreement Ids
+     *
+     * @return array Agreement Ids
     **/
     public function getRequiredAgreementIds()
     {
