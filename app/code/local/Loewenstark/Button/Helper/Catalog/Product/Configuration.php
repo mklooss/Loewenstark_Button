@@ -37,64 +37,11 @@ extends Mage_Catalog_Helper_Product_Configuration
     }
     
     /**
-     * @see parent::getConfigurableOptions
-     * 
-     * @param Mage_Catalog_Model_Product_Configuration_Item_Interface $item
-     * @return array
-    **/
-    protected function getParentConfigurableOptions($item)
-    {
-        if(is_null($this->_configurable_options))
-        {
-            $this->_configurable_options = parent::getConfigurableOptions($item);
-            $this->_setUsedAttributes($this->_configurable_options);
-        }
-        return $this->_configurable_options;
-    }
-    
-    /**
-     * @see parent::getConfigurableOptions
-     * 
-     * @param Mage_Catalog_Model_Product_Configuration_Item_Interface $item
-     * @return array
-    **/
-    public function getConfigurableOptions(Mage_Catalog_Model_Product_Configuration_Item_Interface $item)
-    {
-        return $this->getParentConfigurableOptions($item);
-    }
-    
-    /**
-     * set Used Attribute Labels
-     * 
-     * @param $item array
-     * @return void
-    **/
-    protected function _setUsedAttributes($items)
-    {
-        $data = array();
-        foreach($items as $item)
-        {
-            $data[] = $item["label"];
-        }
-        $this->_used_attributes = $data;
-    }
-    
-    /**
-     * get Used Attribute Labels
-     * 
-     * @return array
-    **/
-    protected function _getUsedAttributes()
-    {
-        return $this->_used_attributes;
-    }
-    
-    /**
      * get Product Quote Model
      * @param $item Mage_Catalog_Model_Product_Configuration_Item_Interface 
      * @return Mage_Catalog_Model_Product
     **/
-    protected function _getProduct($item)
+    protected function _getProduct(Mage_Catalog_Model_Product_Configuration_Item_Interface $item)
     {
         return $item->getProduct();
     }
@@ -105,7 +52,7 @@ extends Mage_Catalog_Helper_Product_Configuration
      * @param $item Mage_Catalog_Model_Product_Configuration_Item_Interface
      * @return array
     **/
-	public function getAttributes($item)
+	public function getAttributes(Mage_Catalog_Model_Product_Configuration_Item_Interface $item)
     {
 		$itemId = $item->getId();
 		if (!isset($this->_finished[$itemId])) {
@@ -130,7 +77,7 @@ extends Mage_Catalog_Helper_Product_Configuration
         $data = array();
         $attributes = $product->getAttributes();
         foreach ($attributes as $attribute) {
-            if (in_array($attribute->getStoreLabel(),$this->_getUsedAttributes()))
+            if ($attribute->getIsConfigurable())
             {
                 continue;
             }
